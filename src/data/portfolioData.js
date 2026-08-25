@@ -158,7 +158,7 @@ export const projectsData = [
       "Mobile-optimized responsive design",
     ],
     github: "https://github.com/Pari-Maurya/Weather-App-",
-    demo: "weather-app-iota-flame.vercel.app",
+    demo: "https://weather-deshboard.vercel.app/",
     badge: "API Showcase",
     gradient: "from-blue-500/20 via-sky-500/10 to-transparent",
     accentColor: "#60a5fa",

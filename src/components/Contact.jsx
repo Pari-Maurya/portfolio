@@ -213,7 +213,7 @@ export const Contact = ({ showToast }) => {
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Message Received!</h3>
                   <p className="text-slate-600 dark:text-slate-400 text-sm max-w-md mx-auto">
-                    Thank you for reaching out, {formData.name}. I will review your message and reply as soon as possible.
+                    Thank you for reaching out. I will review your message and reply as soon as possible.
                   </p>
                   <button
                     onClick={() => {

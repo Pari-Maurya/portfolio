@@ -1,14 +1,16 @@
 import React from 'react';
-import { 
-  Sparkles, 
-  Bot, 
-  CreditCard, 
-  CloudSun, 
-  BarChart2, 
-  BrainCircuit, 
-  Kanban, 
-  FileText, 
-  GitFork 
+import {
+  Sparkles,
+  Bot,
+  CreditCard,
+  CloudSun,
+  BarChart2,
+  BrainCircuit,
+  Kanban,
+  FileText,
+  GitFork,
+  MessageSquare,
+  Gem
 } from 'lucide-react';
 
 export const ProjectMockup = ({ project }) => {
@@ -58,24 +60,7 @@ export const ProjectMockup = ({ project }) => {
           </div>
         );
 
-      case 'resolveiq':
-        return (
-          <div className="relative w-full h-full flex flex-col items-center justify-center p-4 bg-slate-900/90 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-teal-500/5 to-transparent pointer-events-none" />
-            <div className="w-full max-w-[200px] glass-panel rounded-lg p-3 shadow-xl border border-emerald-500/20 text-xs">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-emerald-400 font-semibold flex items-center gap-1">
-                  <CreditCard className="w-3.5 h-3.5" /> ResolveIQ
-                </span>
-                <span className="text-emerald-400 text-[10px] font-mono">-$149.00</span>
-              </div>
-              <div className="flex items-center gap-2 bg-emerald-950/30 p-1.5 rounded border border-emerald-800/30 text-[10px]">
-                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="text-emerald-300">Refund Approved & Dispatched</span>
-              </div>
-            </div>
-          </div>
-        );
+
 
       case 'weather-app':
         return (
@@ -91,76 +76,42 @@ export const ProjectMockup = ({ project }) => {
           </div>
         );
 
-      case 'devmetrics':
-        return (
-          <div className="relative w-full h-full flex flex-col items-center justify-center p-4 bg-slate-900/90 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 via-orange-500/5 to-transparent pointer-events-none" />
-            <div className="w-full max-w-[200px] glass-panel rounded-lg p-3 shadow-xl border border-amber-500/20 text-xs">
-              <div className="flex items-center justify-between mb-2 text-amber-400">
-                <span className="font-semibold flex items-center gap-1"><BarChart2 className="w-3.5 h-3.5" /> DevMetrics</span>
-                <span className="text-[10px] font-mono">+84 Commits</span>
-              </div>
-              <div className="flex gap-1 h-8 items-end">
-                {[40, 75, 55, 90, 65, 80, 100].map((h, i) => (
-                  <div key={i} className="flex-1 bg-amber-500/40 rounded-t" style={{ height: `${h}%` }} />
-                ))}
-              </div>
-            </div>
-          </div>
-        );
 
-      case 'datapulse':
-        return (
-          <div className="relative w-full h-full flex flex-col items-center justify-center p-4 bg-slate-900/90 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-rose-500/10 via-pink-500/5 to-transparent pointer-events-none" />
-            <div className="w-full max-w-[200px] glass-panel rounded-lg p-3 shadow-xl border border-rose-500/20 text-xs">
-              <div className="flex items-center justify-between mb-2 text-rose-400">
-                <span className="font-semibold flex items-center gap-1"><BrainCircuit className="w-3.5 h-3.5" /> DataPulse</span>
-                <span className="text-[10px] text-rose-300">EDA Active</span>
-              </div>
-              <div className="grid grid-cols-3 gap-1">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
-                  <div key={i} className="h-4 bg-rose-500/20 rounded border border-rose-500/20" />
-                ))}
-              </div>
-            </div>
-          </div>
-        );
 
-      case 'taskflow-pro':
+
+      case 'minichat':
         return (
           <div className="relative w-full h-full flex flex-col items-center justify-center p-4 bg-slate-900/90 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 via-blue-500/5 to-transparent pointer-events-none" />
-            <div className="w-full max-w-[200px] glass-panel rounded-lg p-3 shadow-xl border border-indigo-500/20 text-xs">
-              <div className="flex items-center justify-between mb-2 text-indigo-400">
-                <span className="font-semibold flex items-center gap-1"><Kanban className="w-3.5 h-3.5" /> TaskFlow</span>
-                <span className="text-[10px] bg-indigo-500/20 text-indigo-300 px-1 rounded">Board</span>
+            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 via-teal-500/5 to-transparent pointer-events-none" />
+            <div className="w-full max-w-[200px] glass-panel rounded-lg p-3 shadow-xl border border-emerald-500/20 text-xs">
+              <div className="flex items-center justify-between mb-2 text-emerald-400">
+                <span className="font-semibold flex items-center gap-1"><MessageSquare className="w-3.5 h-3.5" /> MiniChat</span>
+                <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-1 rounded font-mono">CRUD</span>
               </div>
-              <div className="flex gap-1.5">
-                <div className="flex-1 bg-slate-800/80 p-1 rounded space-y-1">
-                  <div className="h-2 bg-indigo-500/40 rounded" />
-                  <div className="h-2 bg-indigo-500/20 rounded" />
+              <div className="space-y-1.5">
+                <div className="bg-emerald-950/40 p-1.5 rounded text-[9px] text-emerald-200 border border-emerald-800/30 flex justify-between items-center">
+                  <span>Chat message created</span>
+
                 </div>
-                <div className="flex-1 bg-slate-800/80 p-1 rounded space-y-1">
-                  <div className="h-2 bg-emerald-500/40 rounded" />
+                <div className="bg-slate-800/60 p-1 rounded text-[9px] text-slate-300 flex justify-between items-center">
+                  <span>View, Edit & Delete</span>
                 </div>
               </div>
             </div>
           </div>
         );
 
-      case 'genai-docuassistant':
+      case 'manika':
         return (
           <div className="relative w-full h-full flex flex-col items-center justify-center p-4 bg-slate-900/90 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-violet-500/10 via-purple-500/5 to-transparent pointer-events-none" />
-            <div className="w-full max-w-[200px] glass-panel rounded-lg p-3 shadow-xl border border-violet-500/20 text-xs">
-              <div className="flex items-center gap-1.5 text-violet-400 mb-2">
-                <FileText className="w-3.5 h-3.5" />
-                <span className="font-semibold">DocuAssistant</span>
+            <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 via-rose-500/5 to-transparent pointer-events-none" />
+            <div className="w-full max-w-[200px] glass-panel rounded-lg p-3 shadow-xl border border-amber-500/20 text-xs text-center">
+              <div className="flex items-center justify-center gap-1.5 text-amber-400 mb-1">
+                <Gem className="w-5 h-5 animate-pulse" />
+                <span className="font-bold text-slate-100 text-sm">Manika</span>
               </div>
-              <div className="bg-violet-950/40 p-1.5 rounded text-[9px] text-violet-200 border border-violet-800/30">
-                Q: Summarize section 3...
-              </div>
+              <div className="text-[10px] text-amber-300/90 font-mono">Jewellery Website</div>
+              <div className="mt-1 text-[9px] text-slate-400">HTML5 & CSS3 Responsive UI</div>
             </div>
           </div>
         );

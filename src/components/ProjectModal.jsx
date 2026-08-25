@@ -76,9 +76,16 @@ export const ProjectModal = ({ project, onClose }) => {
 
             {/* Title & Subtitle */}
             <div className="space-y-1">
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 flex items-center justify-between">
-                <span>{project.name}</span>
-              </h3>
+              <div className="flex items-center justify-between gap-2">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+                  {project.name}
+                </h3>
+                {project.date && (
+                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400 px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                    {project.date}
+                  </span>
+                )}
+              </div>
               <p className="text-sm font-medium text-cyan-600 dark:text-cyan-400">{project.subtitle}</p>
             </div>
 

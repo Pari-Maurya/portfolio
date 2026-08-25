@@ -90,9 +90,16 @@ export const Projects = () => {
                   {/* Card Content Body */}
                   <div className="p-5 space-y-3">
                     <div>
-                      <h3 className="font-bold text-slate-900 dark:text-slate-100 text-lg group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors flex items-center justify-between">
-                        <span>{project.name}</span>
-                      </h3>
+                      <div className="flex items-center justify-between gap-2">
+                        <h3 className="font-bold text-slate-900 dark:text-slate-100 text-lg group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+                          {project.name}
+                        </h3>
+                        {project.date && (
+                          <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 shrink-0">
+                            {project.date}
+                          </span>
+                        )}
+                      </div>
                       <p className="text-[11px] font-mono text-cyan-600 dark:text-cyan-400/90">{project.subtitle}</p>
                     </div>
 

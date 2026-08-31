@@ -13,7 +13,7 @@ export const personalInfo = {
   status: "Open to Software Engineering Opportunities",
   aboutMe:
     "I am a Computer Science & Engineering (Data Science) student with a strong passion for full-stack software development, problem-solving, and building practical products. I enjoy tackling challenging Data Structures & Algorithms problems, creating intuitive web applications, and experimenting with AI/GenAI tools to solve real-world problems.",
-  resumeUrl: "https://drive.google.com/file/d/1_ww_1IP3kEpWYUashST61_jSDRAoxHIl/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1fVteXxtRWaok4dGZTw5f5nrweXfVtJJ9/view?usp=sharing",
   email: "parimaurya2006@gmail.com", // Replace with your actual email
   socials: {
     github: "https://github.com/Pari-Maurya",
